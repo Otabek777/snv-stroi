@@ -12,6 +12,9 @@
 body {
   font-family: 'Open Sans', sans-serif; }
 
+.main {
+  overflow: hidden; }
+
 button {
   cursor: pointer; }
 
@@ -115,9 +118,11 @@ ul, ol {
 
 .header.fixed {
   position: fixed;
-  background: #454D5A;
-  -webkit-box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.15);
-  box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.15); }
+  background: #454D5A; }
+
+.header.fixed_active {
+  position: fixed;
+  background: #454D5A; }
 
 .header__box {
   height: 100%;
@@ -226,6 +231,11 @@ ul, ol {
 .services {
   padding-top: 120px;
   padding-bottom: 160px; }
+  .services .services__item.big h5 {
+    width: 420px; }
+  .services .services__item h5 {
+    top: 20px;
+    font-size: 29px; }
 
 .services__box {
   display: -webkit-box;
@@ -861,3 +871,7 @@ ul, ol {
     .footer__nav_right .box .soc {
       width: 40px;
       height: 40px; }
+
+@media screen and (max-width: 1800px) {
+  .contact_us__img {
+    right: -15%; } }
